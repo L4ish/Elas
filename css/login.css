@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+*{
+    font-family: 'Tajawal', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --rosa: #ffb1d2;
+    --azul: #00c2cb;
+    --cinza: #484747;
+    --cinzaclaro: #708090;
+    --cinzaclarissimo: rgb(239, 239, 239);
+    --branco: #fff;
+}
+
+
+/*Seção 1*/
+.login {
+    background: linear-gradient(#ffb1d2, #00c2cb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    min-height: 87vh;
+    padding: clamp(35px, 6%, 50px);
+}
+
+.login_logo {
+    width: 130px;
+    margin-bottom: 5px;
+}
+
+.login_title {
+   color: var(--cinza); 
+   font-size: 2em;
+}
+
+.login_label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+    color: var(--cinza);
+}
+
+
+.input {
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    border-radius: 7px;
+    font-size: .9em;
+    padding: 12px;
+    outline: none;
+    color: var(--cinza);
+    font-weight: 400;
+}
+
+.login_label input:focus-visible { /*borda do input*/
+    outline: 2px solid #708090;
+}
+
+.login_label span {
+    margin: 3.5px;
+    cursor: text;
+    color: var(--cinza);
+} 
+
+.input:focus {
+    background-color: #bcf7fa; /*mudar a cor do fundo do input ao clicar*/
+}
+
+.login_icons {
+    display: flex;
+}
+
+.login_icons img {
+    width: 20px;
+}
+
+.icons_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 30px;
+}
+
+.esqueceu_senha {
+    font-size: 1em;
+    color: var(--cinza);
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.esqueceu_senha:hover {
+    background-color: #ffb1d2;
+}
+
+.login_label_checkbox {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1em;
+    display: flex;
+    font-weight: 600;
+    color: var(--cinza);
+}
+
+.input_checkbox {
+   appearance: none;
+   width: 15px;
+   height: 15px;
+   margin-right: 6px;
+   margin-top: 3px;
+   background-color: var(--cinza);
+   border-radius: 3px;
+}
+
+.input_checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 2.5px;
+    height: 5px;
+    border: 2px solid var(--rosa);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 2px 5px;
+}
+
+.login_button {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    background-color: #484747;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: var(--cinzaclaro);
+}
+
+.button {
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: .8rem;
+}
+
+
+.login_link {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--cinza);
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+
+.menu {
+    display: none;
+}
+
+nav ul li a {
+    font-size: 1em;
+    color: var(--cinza);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li:hover .menu {
+    display: block;
+    position: absolute;
+}
+
+nav ul li:hover .menu ul li:hover {
+    background-color: var(--rosa);
+    border-radius: 7px;
+    width: 80px;
+    text-align: center;
+}
+
+/*Seção 2*/
+
+.lado_direito img {
+    position: absolute;
+    left: 25cm;
+    right: 3cm;
+    top: 10cm;
+    width: 25rem;
+}
+
+
+
+   
+
+
+
+

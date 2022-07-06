@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+*{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rosa: #ffb1d2;
+    --azul: #00c2cb;
+    --cinza: #484747;
+    --cinzaclaro: #708090;
+    --cinzaclarissimo: rgb(239, 239, 239);
+    --branco: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(80deg, rgba(255, 177, 210, .7), rgba(0, 194, 203, .3));
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, .255);
+    background: linear-gradient(80deg, rgba(255, 177, 210, .7), rgba(0, 194, 203, .3));
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.img img {
+   width: 25rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem;
+}
+
+.form_header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: #484747;
+    font-size: 1.2rem;
+}
+
+.login_button {
+    display: flex;
+    align-items: center;
+}
+
+.login_button button {
+    border: none;
+    background-color: var(--cinza);
+    padding: 0.4rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login_button button:hover {
+    background-color: var(--cinzaclaro);
+}
+
+.login_button button a {
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.form_header h1::after { /*Colocar linha embaixo do tírulo*/
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--cinzaclarissimo);
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input_box input {
+    margin: 0.4rem 0;
+    padding: 0.6rem 1.9rem;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(239, 239, 239);
+}
+
+input:focus {
+    background-color: #f8cedf; /*background do input*/
+}
+
+.input_box input:focus-visible { /*borda do input*/
+    outline: 2px solid #708090;
+}
+
+.input_box label { 
+    font-size: 1rem;
+    font-weight: 700;
+    color: #484747;
+}
+
+
+.input_box input::placeholder {
+    font-weight: 400;
+    font-size: .65rem;
+    color: #484747;
+}
+
+
+.finalizar button {
+    display: flex;
+    justify-content: right;
+    right: 12cm;
+    border: none;
+    background-color: var(--cinza);
+    padding: 0.4rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+.finalizar button:hover {
+    background-color: var(--cinzaclaro);
+}
+
+.finalizar button a {
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+

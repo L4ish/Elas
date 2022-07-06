@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Elas/css/login.css">
+    <link rel="shortcut icon" href="../Elas/img/favicon.ico" type="image/x-icon">
+    <script src="../Elas/js/script.js"></script>
+    <title>Para Elas - Login</title>
+</head>
+
+<body>
+   <main>
+    <section class="login">
+
+    <img class="login_logo" src="../Elas/img/logo.png" alt="logo">
+
+    <h1 class="login_title">Faça seu login</h1>
+
+    <label class="login_label">
+        <span>Nome de usuária</span>
+        <input type="text" name="username" placeholder="Informe seu nome de usuária ou email" class="input" required>
+    </label>
+
+    <label class="login_label">
+        <span>Senha</span>
+        <input type="password" name="password" placeholder="Digite a senha" class="input" required>
+    </label>
+
+    <div class="login_icons">
+        <button type="button" class="icons_button">
+            <img src="img/google.png" alt="google">
+        </button>
+    </div>
+
+    <a class="esqueceu_senha" href="../Elas/html/esqueceu_senha.html">Esqueceu a senha?</a> 
+
+    <label class="login_label_checkbox">
+        <input type="checkbox" class="input_checkbox">
+        Continuar conectada
+    </label>
+
+    <button onclick="login" class="login_button"><a class="button" href="#">Entrar</a> </button>
+
+    <nav>
+        <ul type="none">
+             <li> <a href="#" class="login_link">Ainda não possui conta?</a> </li>
+
+            <li> <a href="#" class="login_link">Crie agora </a> 
+                <div class="menu">
+                    <ul type="none">
+                        <li><a href="../Elas/html/cadastro_passageira.html">Passageira</a></li>
+                        <li><a href="../Elas/html/cadastro_motorista.html">Motorista</a></li>
+                    </ul>
+                 </div>
+
+    </li>
+    </ul>
+    </nav>
+
+    </section>
+</main>
+
+    <section class="lado_direito">    
+            <img src="../Elas/img/login.svg">
+    </section>
+
+    
+</body>
+</html>
